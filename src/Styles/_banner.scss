@@ -1,0 +1,130 @@
+.BannerWrapper{
+  padding-left: 108px;
+  @media(max-width:991px){
+    padding-left: 0px !important;
+
+    }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide-active{
+    .swiper-content{
+      display: flex !important;
+    }
+  }
+  
+  .swiper-slide {
+    font-size: 18px;
+  
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+   
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  .Banner-image{
+    // background-image: url("../assets/images/first-slide.svg")
+    img{
+      @media(max-width:991px){
+          width: 100%;
+      }
+    } 
+  }
+  
+  .swiper-slide img {
+   
+    height: 100%; 
+    object-fit: cover;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .swiper-pagination-bullet::after{
+   
+    display: inline-block;
+    content: ". . . . . . . . .";
+    // border-top: 2px dotted black;
+    position: relative;
+    top:13px;
+    left:5px;
+    width: 77px;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+  } 
+  .swiper-pagination-bullet:last-of-type::after{
+    display: none;
+  }
+  .swiper-pagination-bullet-active::after{
+    display: inline-block;
+    content: ". . . . . . . ";
+    color: #000;
+    position: relative;
+    top:13px;
+    left:5px;
+    width: 48px;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+  }
+  
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: red;
+    transform: scale(1.5);
+  }
+  .swiper-pagination{
+    position: relative;
+    text-align: start;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+  }
+.bannerPolygon{
+  position: absolute;
+  @media(max-width:991px){
+    display: none;
+  }
+    top: -148px;
+    right: -293px;
+    z-index: 1000; 
+    height: 109%;
+    z-index: 100000;
+}
+.swiper-content{
+  margin-top: 10% !important;
+  @media(max-width:991px){
+    margin-top: 21% !important;
+  }
+  @media(max-width:600px){
+    margin-top: 32% !important;
+
+  }
+  display: none;
+  p{
+    max-width: 90%;
+
+  }
+  .title{
+    font-size:62px;
+    color:#181E4B;
+    font-weight:bold;
+
+  }
+}
+
+}

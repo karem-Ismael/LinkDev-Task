@@ -1,0 +1,48 @@
+
+
+.navbar {
+    padding: 0px !important;
+    padding-left: 107px !important;
+  
+    @media(max-width:991px){
+    padding-left: 0px !important;
+    .navbar-collapse{
+        background-color: #379be8;
+        color: #fff !important;
+    }
+
+    }
+
+    position: absolute !important;
+    width: 100%;
+    z-index: 1000;
+    ul{
+        margin: 0 !important ;
+        @media(max-width:991px){
+            display: block !important;
+        }
+    }
+    .signup-btn{
+        border :1px solid #000;
+        color: #000;
+        min-width: 100px;
+            text-decoration: none !important
+    }
+    #dropdown-basic{
+        background-color: none !important;
+    }
+    .btn-primary{
+        background: none !important;
+        border: none !important;
+        color:rgba(0,0,0,.55);
+        padding: 0 ;
+    }
+    .btn-primary:hover{
+        color:rgba(0,0,0,.55);
+    }
+    .btn-primary:focus{
+        color:rgba(0,0,0,.55);
+        border: none !important;
+
+    }
+}
